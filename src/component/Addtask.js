@@ -12,7 +12,7 @@ function Addtask(props){
 
     function submithandle(event){
         event.preventDefault();
-        props.updatelist([...props.list,{'title':title,'id':props.list.length +1,'active':'true'}])
+        props.updatelist([...props.list,{'title':title,'key':props.list.length +1,'active':'true'}])
         updatetitle("");
     }
 return(

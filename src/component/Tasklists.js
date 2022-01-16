@@ -4,18 +4,18 @@ import {useState} from 'react'
 import Addtask from "./Addtask";
 function Tasklists( ){
     const [list,updatelist]=useState([
-        {   id:1,
+        {   key:1,
             title:"task_1",
             active:"true"
         }
     ]);
-    function deletetask(key){
+    function deletetask(id){
 updatelist(list.map(task=>{
-    if(task.id!=key)
+    if(task.key!=id)
     return task
     else
         return {
-            id:task.id,
+            key:task.key,
             title:task.title,
             active:"false"
 
@@ -33,7 +33,7 @@ updatelist(list.map(task=>{
                  list.map(tsk=>{
                      if(tsk.active=='true')
                      return(
-                     <Task task={tsk} delete={deletetask}></Task>
+                     <Task key={tsk.key} task={tsk} delete={deletetask}></Task>
                      )
                  })
              }

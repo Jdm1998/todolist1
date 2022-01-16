@@ -8,7 +8,7 @@ function Task(props){
             </div>
             <div className="btn">
 
-            <button onClick={()=>{props.delete(props.task.id)}}>delete</button>
+            <button onClick={()=>{props.delete(props.task.key)}}>delete</button>
             </div>
         </div>
     )
