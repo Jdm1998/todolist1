@@ -1,0 +1,14 @@
+.task{
+    display: flex;
+    background-color: aqua;
+    width: 90vw;
+    
+}
+.title{
+    width: 85vw;
+    border: brown 1px solid;
+}
+.btn{
+    display: flex;
+    justify-content: right;
+}

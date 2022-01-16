@@ -1,0 +1,19 @@
+.Addtask{
+    background-color: darkgrey;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    align-content: flex-start;
+}
+.tasktitle label{
+    margin-left: 10px;
+    margin-right:20px
+}
+.tasktitle{
+    margin-right: 50vw;
+}
+.tasktitle input{
+    width: 80vw;
+}
