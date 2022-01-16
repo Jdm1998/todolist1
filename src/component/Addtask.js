@@ -13,6 +13,7 @@ function Addtask(props){
     function submithandle(event){
         event.preventDefault();
         props.updatelist([...props.list,{'title':title,'id':props.list.length +1,'active':'true'}])
+        updatetitle("");
     }
 return(
     <form onSubmit={submithandle}>
@@ -21,7 +22,7 @@ return(
                 <label>
                     Task
                 </label>
-                <input type='text' onChange={inputhandle} >
+                <input type='text' value={title} onChange={inputhandle} >
                 </input>
             </div>
             <div className="Addaction">

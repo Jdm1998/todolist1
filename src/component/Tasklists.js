@@ -19,7 +19,7 @@ updatelist(list.map(task=>{
             title:task.title,
             active:"false"
 
-        
+            
     }
 }))
     }
@@ -40,6 +40,7 @@ updatelist(list.map(task=>{
         </div>
 
         </div>
+        
     )
 
 }
